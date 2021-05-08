@@ -1,0 +1,321 @@
+body{
+    background: #fffff8;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#app{
+    padding-top: 150px;
+    display: grid;
+    grid-auto-rows: minmax(30px, 150px);
+    height:80vh;
+    background: #f23557;
+    color: #f0d43a;
+    justify-content: center;
+    grid-gap: 0.89;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 27px;
+}
+
+input{
+    width: 320px;
+    background:#22b2da;
+    color: #f0d43a;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    border-radius: 2px;
+}
+.inputError{
+    display: flex;
+}
+label.errorMsg{
+    background-color: bisque;
+    color: brown !important;
+    font-size: 12px;
+    padding: 5px;
+    margin-left: 20px;
+    visibility: hidden;
+    height: 27px;
+    border-radius: 5px;
+}
+
+button{
+    margin-top: 20px;
+    width: 250px;
+    height: 55px;
+    background: #3b4a6b;
+    color: #f0d43a;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+    margin-left: 166px;
+}
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background:#22b2da;
+    color: #f0d43a;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    height: 65px;
+    border-radius: 5px;
+}
+
+.holder{
+    margin-top: -20px;
+    height:10vh;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+} 
+/************** top banner with welcome message and current date and time ****/
+.top-banner-container{
+    width: 96.9vw;
+    background: linear-gradient(135deg, #a5aee2, #5033f5);
+    display: flex;
+    position: fixed !important;
+    justify-content: space-around;
+    font-family: 'Oswald', sans-serif;
+    height: 90px;
+}
+
+#welcome-mes, #today-date{  
+    height: 80px;
+    width: 50vw;
+}
+#welcome-mes{
+    color: #ddca60;
+    font-size: 1.6em;
+    text-align: center;
+   
+}
+#today-date{
+    margin-top: 29px;
+    width: 33vw;
+    display: flex;
+}
+.date, .time{
+    position: relative;
+    margin: 0 9px;
+    color: #ffffff;
+    font-weight: 1em;
+    line-height: 28px;
+    text-align: center;
+    background: #B02F49;
+    border-radius: 5px; 
+}
+.date{
+    width: 20vw;
+    height: 32px;
+    font-size: 1em;
+}
+.time{
+    width: 32px;
+    height: 32px;
+    font-size: 0.7em;
+}
+/************** recent entry section ****/
+#entryHolder{
+    width: 50vw;
+    border: 1px solid rgba(255,255,255,.5)!important;
+    background: linear-gradient(135deg, #22b2da, #0f4b5c); 
+    border-radius: 10px!important;
+    padding-left: 38px;
+    padding-right: 38px;
+    margin-top: -85px;
+}
+#place{
+    padding-top: 20px;
+    
+}
+#place,#date{
+    width: 15vw;
+}
+.topMarginDec{
+    margin-top: -30px;
+}
+
+.info{
+    width: 100%;
+    display: grid;
+    font-size: 14px;
+    grid-template-columns:     10% 20% 30% 30%;
+}
+
+.space{
+    padding-inline: 10px;
+}
+
+.icon{
+    width: 33px;
+    height: 33px;
+    margin-top: 16px;
+}
+.weatherImg{
+    width: 70px;
+    height: 70px;
+}
+.feelingImg{
+    width: 56px;
+    height: 50px;
+    padding-left: 3vw;
+}
+#content{
+    margin-top: 14px;
+    margin-left: 10px;
+}
+#tempRest{
+    margin-top: -10px;
+}
+.recentEntryHeadInfo{
+    display: block;
+    line-height: 33px;
+    width: 15vw;
+    padding-top: 8px;
+}
+
+.infoRow{
+    display: inline-flex;
+    
+}
+.iconDiv{
+    font-size: 14px;
+    display: inline-flex;
+    width: 15vw;
+}
+#tempContent{
+    display: block;
+    line-height: 24px;
+    padding-top: 10px;
+}
+.iconDiv:first-of-type{
+    margin-left: 3vw;
+}
+.restTemp{
+    font-size: 14px;
+    padding-top: 20px;
+    margin-right: 2vw;
+
+}
+#temp{
+    font-size: 24px;
+    padding-top: 17px;
+    width: 10vw;
+}
+.recentDate,#place{
+    font-size: 14px;
+    margin-top: -11px;
+}
+.recentEntryHeadRestInfo{
+    padding-top: 20px;
+    line-height: 21px;
+    font-size: 14px;
+}
+
+
+/* This class makes the top page look good on small screens */
+@media screen and (max-width: 900px) {
+    #welcome-mes{
+        color: #ddca60;
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #welcome-mes{
+        color: #ddca60;
+        font-size: 1em;
+    }
+   
+    #tempHead, #welcome-mes,
+    #app, label, 
+    input,label.errorMsg, button,
+    textarea, h1,.recentDate,#place, #temp{
+        font-size: 1em !important;
+    }
+    .date, .time{
+        font-size: 0.7em
+    }
+    .holder{
+        margin-left: 20vw;
+        margin-right: 2vw;
+    }
+    .title{
+        margin-left: 108px;
+    }
+    
+}
+@media screen and (max-width: 400px) {
+    #tempHead, #welcome-mes,body,
+    #app, label, 
+    input,label.errorMsg, button,
+    textarea, h1,.recentDate,#place, #temp{
+        font-size: 0.89em !important;
+    }
+    .holder{
+        margin-left: 20vw;
+        margin-right: 2vw;
+    }
+    label.errorMsg{
+        font-size: 0.6em !important;
+    }
+    button{
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    .date, .time{
+        font-size: 0.6em
+    }
+    .date{
+        width: 30vw;
+        height: 32px;
+    }
+    textarea, input,button{
+        width: 50vw;
+    }
+}
+@media screen and (max-width: 200px) {
+    .infoRow{
+        margin: 5vw;
+    }
+    label,textarea, input,button{
+        margin-left: 10vw;
+        margin-right: 5vw;
+    }
+    .title {
+        margin-left: 46px;
+    }
+}
+

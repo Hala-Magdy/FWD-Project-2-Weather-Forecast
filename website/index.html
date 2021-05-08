@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Journal</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ 
+  <link rel="icon" href="./images/temp1.png" type="image/gif" sizes="16x16">
+
+</head>
+
+<body>
+  <div class="top-banner-container" id="top-banner-container">
+    <div id="welcome-mes">
+      <p>Welcome to the Weather Journal App Project</p>
+    </div>
+    <div id="today-date">
+      <div class="date" id="dateHeader"></div>
+      <div id="hours" class="time"></div>
+      <div id="minutes" class="time"></div>
+      <div id="seconds" class="time"></div>
+    </div>
+  </div>
+
+  <div id="app">
+    <div class="holder zip">
+      <label for="zip">Please Enter your city Zip Code</label>
+      <div class="inputError">
+        <input type="text" id="zip" placeholder="enter zip code here">
+        <label for="zip" id="zipError" class="errorMsg" ></label>
+    </div>
+    </div>
+    <div class="holder feel topMarginDec">
+      <label for="feelings">How are you feeling today?</label>
+      <div class="inputError">
+        <textarea class="myInput" id="feelings" placeholder="Enter your feelings here" rows="3" cols="50"></textarea>
+        <label for="feelings" id="feelingError" class="errorMsg"></label>
+      </div>
+    </div>
+    <div class="holder submitBtn topMarginDec">
+      <button id="generate" type="submit"> Get Today's Temperature </button>
+    </div>
+    <div class="title topMarginDec">Most Recent Entry</div>
+    <div class="holder entry"  style="visibility: hidden;" id="recentEntry" >
+      <div id="entryHolder" class="entryHolder">
+        <div class="infoRow">
+          
+          <div id="recentEntryHeadTempImgDiv" class="infoRow">
+            <img class="weatherImg" src="./images/weather1.png" />
+            <div id="tempContent">
+              <div id="temp"></div>
+              <div id="contentHead"></div>
+          
+            </div>
+            </div>
+
+          <div class="recentEntryHeadInfo">
+             
+            <div id="place"></div>
+            <div id="date" class="recentDate"></div>
+          </div>
+          <div class="recentEntryHeadRestInfo">
+            <div id="restInfo"></div> 
+          </div>
+        </div>
+        <div id="tempRest" class="infoRow">
+          <div id="maxTempImg" class="iconDiv">
+            <img class="icon" src="./images/temp1.png"/>
+            <div id="maxTemp" class="restTemp"></div>
+          </div>
+          <div id="minTempImg" class="iconDiv">
+            <img class="icon" src="./images/temp2.png"/>
+            <div id="minTemp" class="restTemp"></div>
+          </div>
+          <div id="feelsTempImg" class="iconDiv">
+            <img class="icon" src="./images/temp.png"/>
+            <div id="feelsLike" class="restTemp"></div>
+          </div>
+        </div>
+        <div class="infoRow">
+          <img class="feelingImg"  src="./images/feeling.png"/>
+          <div id="content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id='demo'></div>
+  <script src="./app.js" type="text/javascript"></script>
+
+</body>
+
+</html>
